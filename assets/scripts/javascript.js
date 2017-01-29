@@ -23,6 +23,13 @@ $(document).ready(function() {
 		printTime();
 	});
 
+	$("#reset-btn").click(function(event) {
+		clearInterval(interval);
+		pomodoroTimeMinutes = 25;
+		pomodoroTimeSeconds = 0;
+		printTime();
+	});
+
 
 
 
